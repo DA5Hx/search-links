@@ -26,6 +26,6 @@ And the site will now be live on port 5000 to test
 * The Docker file for Meilisearch is setup using railway.app on port 7700
 * React framework is used to create the Frontend UI of the app
 * Material UI and Tailwind CSS is mainly used for styling the components
-* If the data is not indexed on the Meilisearch, it is carried when the app is launched
+* If the data is not indexed on the Meilisearch, it is indexed when the app is launched
 * Once the data is indexed, we can search whatever user inputs and display using Meilisearch 'search' function
 
