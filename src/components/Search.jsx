@@ -67,13 +67,12 @@ const Search = ({ client, data, setData,show,setShow }) => {
 				tabIndex={-1}
 				fullWidth
 				sx={{
-					'& .css-16z3zeq-MuiInputBase-root-MuiInput-root:after': {
+					'& .css-1r5ns1a::after': {
 						borderBottom: ' 2px solid rgb(13 148 136)',
 					},
-					'& .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused':
-						{
-							color: 'rgb(13 148 136)',
-						},
+					'& .css-348fk2.Mui-focused': {
+						color: 'rgb(13 148 136)',
+					},
 					'& .css-1x51dt5-MuiInputBase-input-MuiInput-input': {
 						color: 'rgb(13 148 136)',
 					},
@@ -112,7 +111,7 @@ const Search = ({ client, data, setData,show,setShow }) => {
 				// 	setCount(5);
 				// }}
 			/>
-			{show && search.length>0 && (
+			{show && search.length > 0 && (
 				<div className="absolute p-0 w-full  bg-teal-200 shadow-teal-800 shadow-md">
 					{search.slice(0, count).map((obj) => (
 						<List
@@ -120,8 +119,8 @@ const Search = ({ client, data, setData,show,setShow }) => {
 							obj={obj}
 							setData={setData}
 							setShow={setShow}
-                            setKeyword={setKeyword}
-                            setSearch={setSearch}
+							setKeyword={setKeyword}
+							setSearch={setSearch}
 						/>
 					))}
 					{count < search.length && (
