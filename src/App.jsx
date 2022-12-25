@@ -19,16 +19,18 @@ function App() {
 
 	// client.getIndex('links').then((res) => console.log(res));
 
-	client.getIndex('links').catch(() => {
-		links.forEach((link, ind) => {
-			const link0 = link;
-			links[ind] = {
-				id: crypto.randomUUID(),
-				link: link0,
-			};
+	useEffect(()=>{
+		client.getIndex('links').catch(() => {
+			links.forEach((link, ind) => {
+				const link0 = link;
+				links[ind] = {
+					id: crypto.randomUUID(),
+					link: link0,
+				};
+			});
+			client.index('links').addDocuments(links);
 		});
-		client.index('links').addDocuments(links);
-	});
+	},[])
 	// client.deleteIndex('links')
 
 	// useEffect(()=>{

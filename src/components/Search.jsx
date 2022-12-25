@@ -7,13 +7,13 @@ import List from './List';
 
 const Search = ({ client, data, setData,show,setShow }) => {
 	const [keyword, setKeyword] = useState('');
-	const [search, setSearch] = useState(null);
+	const [search, setSearch] = useState([]);
 
 	const [count, setCount] = useState(5);
-	// const ref = useRef(null);
+	// const ref = useRef([]);
 
 	// console.log(keyword)
-	console.log(show);
+	// console.log(show);
 	// console.log(data);
 	// console.log('rendered')
 	const handleSearch = (e) => {
@@ -29,7 +29,7 @@ const Search = ({ client, data, setData,show,setShow }) => {
 			setData(search);
 			setShow(false);
 			setKeyword('');
-			setSearch(null);
+			setSearch([]);
 			// console.log(data);
 		}
 		if (e.type === 'keydown') {
@@ -112,12 +112,12 @@ const Search = ({ client, data, setData,show,setShow }) => {
 				// 	setCount(5);
 				// }}
 			/>
-			{show && search && (
+			{show && search.length>0 && (
 				<div className="absolute p-0 w-full  bg-teal-200 shadow-teal-800 shadow-md">
 					{search.slice(0, count).map((obj) => (
 						<List
 							key={obj.id}
-							link={obj.link}
+							obj={obj}
 							setData={setData}
 							setShow={setShow}
                             setKeyword={setKeyword}
@@ -126,7 +126,7 @@ const Search = ({ client, data, setData,show,setShow }) => {
 					))}
 					{count < search.length && (
 						<p
-							className="cursor-pointer font-signika text-teal-700 hover:text-teal-900 hover:underline ease-in-out duration-1000"
+							className="cursor-pointer font-signika p-1 mx-1 text-teal-700 hover:text-teal-900 hover:underline ease-in-out duration-1000"
 							onClick={() => {
 								setCount((prevCount) =>
 									Math.min(search.length, prevCount + 5)
