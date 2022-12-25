@@ -1,4 +1,4 @@
-# search-links
+# Search-Links
 
 ## Link to deployed site: [Site](https://search-links.netlify.app)
 
