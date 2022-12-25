@@ -7,7 +7,7 @@
 * Clone or download the repository and then run the following command in the terminal to install the dependencies
 
 ```console
-$ npm install
+npm install
 ```
 
 * Go to the following link to setup the Docker file for Meilisearch on the railwayapp: [Railway](https://railway.app/new/template/TXxa09?referralCode=YltNo3)
@@ -15,7 +15,7 @@ $ npm install
 * Now, run the following command to host the site locally:
 
 ```console
-$ npm run dev
+npm run dev
 ```
 
 And the site will now be live on port 5000 to test
