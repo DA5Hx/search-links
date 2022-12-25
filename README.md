@@ -1,6 +1,6 @@
 # Search-Links
 
-## Link to deployed site: [Site](https://search-links.netlify.app)
+## Link to deployed site: [Site](https://search-links.netlify.app,{:target="_blank"})
 
 ## Setting up Locally:
 
@@ -10,7 +10,7 @@
 npm install
 ```
 
-* Go to the following link to setup the Docker file for Meilisearch on the railwayapp: [Railway](https://railway.app/new/template/TXxa09?referralCode=YltNo3)
+* Go to the following link to setup the Docker file for Meilisearch on the railwayapp: [Railway](https://railway.app/new/template/TXxa09?referralCode=YltNo3,{:target="_blank"})
 * Remember to change the api key to something secure and update the same in the App.js file
 * Now, run the following command to host the site locally:
 
