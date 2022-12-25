@@ -8,9 +8,9 @@ module.exports = {
 			}),
 			fontFamily: {
 				sans: ['Patua One', 'cursive'],
-				signika:['Signika', 'sans-serif'],
-				inter:['Inter','sans-serif'],
-				palaq:['Palaqnuin Dark','sans']
+				signika: ['Signika', 'sans-serif'],
+				inter: ['Inter', 'sans-serif'],
+				palaq: ['Palanquin Dark', 'sans'],
 			},
 		},
 	},

@@ -1,6 +1,7 @@
 import { MeiliSearch } from 'meilisearch';
 import { useEffect, useState } from 'react';
 import saved_links from '../data/saved_links.json';
+import Footer from './components/Footer';
 import Nav from './components/Nav';
 import Results from './components/Results';
 import Search from './components/Search';
@@ -43,9 +44,9 @@ function App() {
 
 
 	return (
-		<div className="App">
+		<div className="App h-screen flex flex-col">
 			<Nav />
-			<div className="flex flex-col justify-center items-center">
+			<div className="flex flex-col items-center flex-1">
 				<Search
 					client={client}
 					data={data}
@@ -59,6 +60,7 @@ function App() {
 					<div className="h-screen w-screen fixed top-0 left-0 backdrop-blur-sm"></div>
 				)}
 			</div>
+			<Footer/>
 		</div>
 	);
 }

@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+a:last-child > hr{
+    border: none;
+}
+
+a:first-child > hr{
+    border-top: 2px solid rgb(19 78 74);
+}

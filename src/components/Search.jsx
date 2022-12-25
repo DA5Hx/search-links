@@ -47,7 +47,7 @@ const Search = ({ client, data, setData,show,setShow }) => {
 
 	return (
 		<div
-			className="search w-1/4 m-8 relative mt-16 z-20"
+			className="search w-2/5 m-8 relative mt-16 z-20"
 			tabIndex="0"
 			onFocus={() => {
 				keyword.trim() && setTimeout(() => setShow(true), 201);
